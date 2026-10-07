@@ -1,0 +1,7 @@
+cmd prompts to run rag:
+
+D:\RAG\rag_env\Scripts\activate
+
+navigating to the folder
+
+cd D:\RAG

@@ -1,0 +1,36 @@
+# Introduction to RAG (Retrieval Augmented Generation)
+
+Retrieval-Augmented Generation, commonly called RAG, is an AI technique where a language model retrieves information from an external data source before generating an answer. This helps the model stay factual and grounded in your documents.
+
+## Why RAG is useful
+RAG is useful because:
+- It avoids hallucinations by relying on actual documents.
+- It allows updating knowledge without retraining the model.
+- It enables domain-specific chatbots, such as legal or medical assistants.
+
+## How a RAG pipeline works
+A basic RAG pipeline contains three major steps:
+
+1. **Indexing**  
+   Your documents are split into chunks and converted into vector embeddings.
+
+2. **Retrieval**  
+   When you ask a question, the system retrieves the most similar chunks.
+
+3. **Generation**  
+   The LLM answers using ONLY the retrieved context.
+
+## When RAG fails
+A RAG system will fail or return "Not found in your documents" when:
+- The question is unrelated to stored documents.
+- The document chunks do not contain that information.
+- The chunk size is too small or too large.
+
+## Example facts
+- The inventor of RAG is Meta AI, introduced in 2020.
+- RAG is widely used in chatbots, search engines, and enterprise AI systems.
+- RAG works best when documents are clean and well-split.
+- Embedding models convert text into numerical vectors.
+
+## Fun fact
+RAG is not a single algorithm—it is a design pattern combining retrieval + generation.
